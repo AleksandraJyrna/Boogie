@@ -81,16 +81,33 @@ header, nav ul {
 display: flex;
 }
 header {
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 padding: 1em 2em;
 }
 
 header li {
   list-style: none;
-  margin-right: 1em; 
+  margin-right: 1em;
 }
 header a {
   text-decoration: none;
   }
 /*END HEADER STYLES*/
+
+.grid {
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+.half1 {
+  background-color: green;
+  width: auto;
+  height: 400px;
+}
+.half2 {
+  background-color: purple;
+  width: auto;
+}
